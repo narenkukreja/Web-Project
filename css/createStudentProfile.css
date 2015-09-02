@@ -1,0 +1,50 @@
+*
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    text-align: center;
+    background-color: #34495e;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    color: white;
+}
+
+
+body
+{
+    background-color: #ecf0f1;
+    margin: 0;
+}
+
+#submit{
+    width:100px;
+    height:40px;
+    background: #2ecc71;
+    font-weight:bold;
+    font-size:20px;
+    color: white;
+}
+
+#submit:hover
+{
+    background-color: #27ae60;
+}
+
+.button
+{
+    text-align: center;
+}
+
+h3
+{
+    text-align: center;
+}
+
+.content
+{
+   margin-left: 2%;
+   margin-right: 2%;
+}
+

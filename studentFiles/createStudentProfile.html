@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Student Sign-Up</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/createStudentProfile.css">
+
+</head>
+
+<body>
+
+<div class="header">
+
+    <h2>Create Student Profile</h2>
+
+</div>
+
+<div class="content">
+
+    <form action="createStudentForm.php" method="POST">
+
+        <br>
+        <div class="button">
+            <input id="submit" type="submit" value="Submit">
+        </div>
+
+        <br>
+        <hr>
+
+        <h3> Personal Information </h3>
+
+        <hr>
+
+        <br>
+
+        * indicates a required field
+
+        <br>
+        <br>
+        <br>
+
+        *First name: <input type="text" name="firstname" size="35" required/>
+
+        <br>
+        <br>
+
+        *Last name: <input type="text" name="lastname" size="35" required/>
+        <br>
+        <br>
+
+        Gender:
+        <input type="radio" name="sex" value="Male"/>Male
+        <input type="radio" name="sex" value="Female"/>Female
+
+        <br> <br>
+
+        *Term Admitted:
+        <input type="radio" name="termadmitted" value="Fall" checked required/>Fall
+
+        <input type="radio" name="termadmitted" value="Winter" required/>Winter
+
+        <br> <br>
+
+        *Year Admitted:
+
+        <select name="yearadmitted" required>
+
+            <option value="2015" id="year_2015" > 2015 </option>
+
+            <option value="2016" id="year_2016"> 2016 </option>
+
+            <option value="2017" id="year_2017"> 2017 </option>
+
+            <option value="2018" id="year_2018"> 2018 </option>
+
+            <option value="2019" id="year_2019"> 2019 </option>
+
+            <option value="2020" id="year_2020"> 2020 </option>
+
+        </select>
+
+        <br> <br>
+
+        *Email: <input type="email" name="email" size="35" required /> <br> <br>
+
+        Telephone: <input type="number" name="telephone" size="35" /> <br> <br>
+
+        *Address: <input type="text" name="address" size="35" required /> <br> <br>
+
+        *City: <input type="text" name="city" size="35" required /> <br> <br>
+
+        *Postal Code: <input type="text" name="postalcode" size="35" required/> <br><br>
+
+        Province: <input type="text" name="province" size="35" /> <br> <br>
+
+        *Country: <input type="text" name="country" value="Canada" size="35" required /> <br> <br>
+
+        *Citizenship Status:
+        <input type="radio" name="citizenship" value="International"  required /> International
+        <input type="radio" name="citizenship" value="Canadian Citizen/Permanent Resident" required /> Canadian Citizen/Permanent Resident
+
+        <br> <br>
+
+
+        <br>
+        <hr>
+        <h3>English Language Proficiency</h3>
+        <hr>
+        <br>
+
+        Read:
+        <select name="read">
+
+            <option> </option>
+
+            <option value="Fluent"> Fluent </option>
+
+            <option value="Very Good"> Very Good </option>
+
+            <option value="Good"> Good </option>
+
+            <option value="Basic"> Basic </option>
+
+        </select>
+
+        <br> <br>
+
+        Write:
+        <select name="write">
+
+            <option> </option>
+
+            <option value="Fluent"> Fluent </option>
+
+            <option value="Very Good"> Very Good </option>
+
+            <option value="Good"> Good </option>
+
+            <option value="Basic"> Basic </option>
+
+        </select>
+
+        <br> <br>
+
+        Speak:
+
+        <select name="speak">
+
+            <option> </option>
+
+            <option value="Fluent"> Fluent </option>
+
+            <option value="Very Good"> Very Good </option>
+
+            <option value="Good"> Good </option>
+
+            <option value="Basic"> Basic </option>
+
+        </select>
+
+        <br> <br>
+
+        <br>
+        <hr>
+        <h3>Student's Education</h3>
+
+        <hr>
+        <br>
+
+        <label for="degree">Undergraduate Degree(s):</label>
+
+        <textarea id="degree" name="degree" cols="50" rows="3" > </textarea> <br> <br>
+
+        Major: <input type="text" size="35" name="major" /> <br> <br>
+
+        Undergraduate Degree(s) GPA: <input type="number" step="0.01" min="0" name="gpa"/> <br> <br>
+
+        University: <input type="text" size="35" name="university" /> <br> <br>
+
+        Country: <input type="text" size="35" name="unicountry" /> <br> <br>
+
+        Graduation Date: <input type="date" name="graddate" /> <br> <br>
+
+
+        <br> <hr> <h3>Work Experience</h3> <hr> <br>
+
+        Company: <input type="text" name="company" size="35" /> <br> <br>
+
+        Dates: <input type="date" name="datefrom" /> to <input type="date" name="dateto" /> <br> <br>
+
+        Position: <input type="text" name="position" size="35"/> <br> <br>
+
+        <label for="duties">Duties:</label>
+
+        <textarea id="duties" name="duties" cols="50" rows="5"> </textarea>
+
+        <br> <br>
+
+
+        <h3>Knowledge and Skills</h3> <hr> <br>
+
+        <ol>
+
+            <li>
+
+                ASP.Net:
+
+                <select name="asp">
+
+                    <option> </option>
+
+                    <option value="Extremely Competent">Extremely Competent </option>
+
+                    <option value="Very Moderately Competent">Very Moderately Competent </option>
+
+                    <option value="Moderately Competent">Moderately Competent </option>
+
+                    <option value="Little Competent">Little Competent </option>
+
+                    <option value="Not Competent at all">Not Competent at all </option>
+
+                </select> <br> <br>
+
+            </li>
+
+
+            <li>
+
+                C:
+
+                <select name="c_lang">
+
+                    <option> </option>
+
+                    <option value="Extremely Competent">Extremely Competent </option>
+
+                    <option value="Very Moderately Competent">Very Moderately Competent </option>
+
+                    <option value="Moderately Competent">Moderately Competent </option>
+
+                    <option value="Little Competent">Little Competent </option>
+
+                    <option value="Not Competent at all">Not Competent at all </option>
+
+                </select> <br> <br>
+
+            </li>
+
+            <li>
+                C++:
+
+                <select name="cpp">
+
+                    <option> </option>
+
+                    <option value="Extremely Competent">Extremely Competent </option>
+
+                    <option value="Very Moderately Competent">Very Moderately Competent </option>
+
+                    <option value="Moderately Competent">Moderately Competent </option>
+
+                    <option value="Little Competent">Little Competent </option>
+
+                    <option value="Not Competent at all">Not Competent at all </option>
+
+                </select> <br> <br>
+
+            </li>
+
+
+            <li>
+                C#:
+                <select name="csharp">
+
+                    <option> </option>
+
+                    <option value="Extremely Competent">Extremely Competent </option>
+
+                    <option value="Very Moderately Competent">Very Moderately Competent </option>
+
+                    <option value="Moderately Competent">Moderately Competent </option>
+
+                    <option value="Little Competent">Little Competent </option>
+
+                    <option value="Not Competent at all">Not Competent at all </option>
+
+                </select> <br> <br>
+            </li>
+
+            <li>
+
+                Coldfusion:
+                <select name="coldfusion">
+
+                    <option> </option>
+
+                    <option value="Extremely Competent">Extremely Competent </option>
+
+                    <option value="Very Moderately Competent">Very Moderately Competent </option>
+
+                    <option value="Moderately Competent">Moderately Competent </option>
+
+                    <option value="Little Competent">Little Competent </option>
+
+                    <option value="Not Competent at all">Not Competent at all </option>
+
+                </select> <br> <br>
+
+            </li>
+
+
+            <li>
+
+                Flex:
+                <select name="flex">
+
+                    <option> </option>
+
+                    <option value="Extremely Competent">Extremely Competent </option>
+
+                    <option value="Very Moderately Competent">Very Moderately Competent </option>
+
+                    <option value="Moderately Competent">Moderately Competent </option>
+
+                    <option value="Little Competent">Little Competent </option>
+
+                    <option value="Not Competent at all">Not Competent at all </option>
+
+                </select> <br> <br>
+
+            </li>
+
+
+            <li>
+
+                Java:
+                <select name="java">
+
+                    <option> </option>
+
+                    <option value="Extremely Competent">Extremely Competent </option>
+
+                    <option value="Very Moderately Competent">Very Moderately Competent </option>
+
+                    <option value="Moderately Competent">Moderately Competent </option>
+
+                    <option value="Little Competent">Little Competent </option>
+
+                    <option value="Not Competent at all">Not Competent at all </option>
+
+                </select> <br> <br>
+
+            </li>
+
+
+
+            <li>
+
+                JavaScript:
+                <select name="javascript">
+
+                    <option> </option>
+
+                    <option value="Extremely Competent">Extremely Competent </option>
+
+                    <option value="Very Moderately Competent">Very Moderately Competent </option>
+
+                    <option value="Moderately Competent">Moderately Competent </option>
+
+                    <option value="Little Competent">Little Competent </option>
+
+                    <option value="Not Competent at all">Not Competent at all </option>
+
+                </select> <br> <br>
+
+            </li>
+
+            <li>
+
+                Lisp:
+                <select name="lisp">
+
+                    <option> </option>
+
+                    <option value="Extremely Competent">Extremely Competent </option>
+
+                    <option value="Very Moderately Competent">Very Moderately Competent </option>
+
+                    <option value="Moderately Competent">Moderately Competent </option>
+
+                    <option value="Little Competent">Little Competent </option>
+
+                    <option value="Not Competent at all">Not Competent at all </option>
+
+                </select> <br> <br>
+
+            </li>
+
+
+            <li>
+
+                MATLAB:
+                <select name="matlab">
+
+                    <option> </option>
+
+                    <option value="Extremely Competent">Extremely Competent</option>
+
+                    <option value="Very Moderately Competent">Very Moderately Competent </option>
+
+                    <option value="Moderately Competent">Moderately Competent </option>
+
+                    <option value="Little Competent">Little Competent </option>
+
+                    <option value="Not Competent at all">Not Competent at all </option>
+
+                </select> <br> <br>
+
+            </li>
+
+            <li>
+                Objective-C:
+                <select name="objc">
+                    <option> </option>
+
+                    <option value="Extremely Competent">Extremely Competent</option>
+
+                    <option value="Very Moderately Competent">Very Moderately Competent </option>
+
+                    <option value="Moderately Competent">Moderately Competent </option>
+
+                    <option value="Little Competent">Little Competent </option>
+
+                    <option value="Not Competent at all">Not Competent at all </option>
+                </select> <br> <br>
+
+            </li>
+
+            <li>
+                MySQL:
+                <select name="mysql">
+                    <option> </option>
+
+                    <option value="Extremely Competent">Extremely Competent</option>
+
+                    <option value="Very Moderately Competent">Very Moderately Competent </option>
+
+                    <option value="Moderately Competent">Moderately Competent </option>
+
+                    <option value="Little Competent">Little Competent </option>
+
+                    <option value="Not Competent at all">Not Competent at all </option>
+                </select> <br> <br>
+            </li>
+
+
+            <li>
+
+                Pascal:
+                <select name="pascal_lang">
+
+                    <option> </option>
+
+                    <option value="Extremely Competent">Extremely Competent </option>
+
+                    <option value="Very Moderately Competent">Very Moderately Competent </option>
+
+                    <option value="Moderately Competent">Moderately Competent </option>
+
+                    <option value="Little Competent">Little Competent </option>
+
+                    <option value="Not Competent at all">Not Competent at all </option>
+
+                </select> <br> <br>
+
+            </li>
+
+
+
+            <li>
+
+                Perl:
+                <select name="perl">
+
+                    <option> </option>
+
+                    <option value="Extremely Competent">Extremely Competent </option>
+
+                    <option value="Very Moderately Competent">Very Moderately Competent </option>
+
+                    <option value="Moderately Competent">Moderately Competent </option>
+
+                    <option value="Little Competent">Little Competent </option>
+
+                    <option value="Not Competent at all">Not Competent at all </option>
+
+                </select> <br> <br>
+
+            </li>
+
+
+
+            <li>
+
+                PHP:
+                <select name="php">
+
+                    <option> </option>
+
+                    <option value="Extremely Competent">Extremely Competent </option>
+
+                    <option value="Very Moderately Competent">Very Moderately Competent </option>
+
+                    <option value="Moderately Competent">Moderately Competent </option>
+
+                    <option value="Little Competent">Little Competent </option>
+
+                    <option value="Not Competent at all">Not Competent at all </option>
+
+                </select> <br> <br>
+
+            </li>
+
+
+            <li>
+
+                Prolog:
+                <select name="prolog">
+
+                    <option> </option>
+
+                    <option value="Extremely Competent">Extremely Competent </option>
+
+                    <option value="Very Moderately Competent">Very Moderately Competent </option>
+
+                    <option value="Moderately Competent">Moderately Competent </option>
+
+                    <option value="Little Competent">Little Competent </option>
+
+                    <option value="Not Competent at all">Not Competent at all </option>
+
+                </select> <br> <br>
+
+            </li>
+
+
+            <li>
+
+                Python:
+                <select name="python">
+
+                    <option> </option>
+
+                    <option value="Extremely Competent">Extremely Competent </option>
+
+                    <option value="Very Moderately Competent">Very Moderately Competent </option>
+
+                    <option value="Moderately Competent">Moderately Competent </option>
+
+                    <option value="Little Competent">Little Competent </option>
+
+                    <option value="Not Competent at all">Not Competent at all </option>
+
+                </select> <br> <br>
+
+            </li>
+
+
+            <li>
+
+                R:
+                <select name="r">
+
+                    <option> </option>
+
+                    <option value="Extremely Competent">Extremely Competent </option>
+
+                    <option value="Very Moderately Competent">Very Moderately Competent </option>
+
+                    <option value="Moderately Competent">Moderately Competent </option>
+
+                    <option value="Little Competent">Little Competent </option>
+
+                    <option value="Not Competent at all">Not Competent at all </option>
+
+                </select> <br> <br>
+
+            </li>
+
+
+
+            <li>
+
+                Ruby:
+                <select name="ruby">
+
+                    <option> </option>
+
+                    <option value="Extremely Competent">Extremely Competent </option>
+
+                    <option value="Very Moderately Competent">Very Moderately Competent </option>
+
+                    <option value="Moderately Competent">Moderately Competent </option>
+
+                    <option value="Little Competent">Little Competent </option>
+
+                    <option value="Not Competent at all">Not Competent at all </option>
+
+                </select> <br> <br>
+
+            </li>
+
+
+            <li>
+
+                SQL-Oracle:
+                <select name="sqloracle">
+
+                    <option> </option>
+
+                    <option value="Extremely Competent">Extremely Competent </option>
+
+                    <option value="Very Moderately Competent">Very Moderately Competent </option>
+
+                    <option value="Moderately Competent">Moderately Competent </option>
+
+                    <option value="Little Competent">Little Competent </option>
+
+                    <option value="Not Competent at all">Not Competent at all </option>
+
+                </select> <br> <br>
+
+            </li>
+
+
+            <li>
+
+                Tcl:
+                <select name="tcl">
+
+                    <option> </option>
+
+                    <option value="Extremely Competent">Extremely Competent </option>
+
+                    <option value="Very Moderately Competent">Very Moderately Competent </option>
+
+                    <option value="Moderately Competent">Moderately Competent </option>
+
+                    <option value="Little Competent">Little Competent </option>
+
+                    <option value="Not Competent at all">Not Competent at all </option>
+
+                </select> <br> <br>
+
+            </li>
+
+
+            <li>
+
+                T-SQL:
+                <select name="tsql">
+
+                    <option> </option>
+
+                    <option value="Extremely Competent">Extremely Competent </option>
+
+                    <option value="Very Moderately Competent">Very Moderately Competent </option>
+
+                    <option value="Moderately Competent">Moderately Competent </option>
+
+                    <option value="Little Competent">Little Competent </option>
+
+                    <option value="Not Competent at all">Not Competent at all </option>
+
+                </select> <br> <br>
+
+            </li>
+
+
+            <li>
+
+                VB .NET:
+                <select name="vbnet">
+
+                    <option> </option>
+
+                    <option value="Extremely Competent">Extremely Competent </option>
+
+                    <option value="Very Moderately Competent">Very Moderately Competent </option>
+
+                    <option value="Moderately Competent">Moderately Competent </option>
+
+                    <option value="Little Competent">Little Competent </option>
+
+                    <option value="Not Competent at all">Not Competent at all </option>
+
+                </select> <br> <br>
+
+            </li>
+
+
+            <li>
+
+                Other:
+                <input type="text" size="20" name="otherskill">
+
+                <select name="otherskillcomp">
+
+                    <option> </option>
+
+                    <option value="Extremely Competent">Extremely Competent </option>
+
+                    <option value="Very Moderately Competent">Very Moderately Competent </option>
+
+                    <option value="Moderately Competent">Moderately Competent </option>
+
+                    <option value="Little Competent">Little Competent </option>
+
+                    <option value="Not Competent at all">Not Competent at all </option>
+
+                </select> <br> <br>
+
+            </li>
+
+            </ol>
+           <br><br>
+
+
+        <br>
+
+    </form>
+
+</div>
+
+</body>
+
+</html>

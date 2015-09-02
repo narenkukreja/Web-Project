@@ -1,0 +1,62 @@
+
+*
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h3, p
+{
+    color: white;
+}
+
+body
+{
+    background-color: #34495e;
+    margin: 0px;
+}
+
+
+.Sign-In
+{
+    text-align: center;
+    background: #2c3e50;
+}
+
+
+#button
+{
+    width: 120px;
+    height: 40px;
+    background: #2ecc71;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+#button:hover
+{
+    background-color: #27ae60;
+}
+
+#button:active
+{
+    background-color: #27ae60;
+}
+
+td
+{
+    color: white;
+    text-align: center;
+    font-size: larger;
+}
+
+.content
+{
+    padding-top: 6%;
+}
+
+#account
+{
+    color: white;
+    font-size: medium;
+}
