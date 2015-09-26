@@ -3,8 +3,8 @@ This is the final project for the Web Information Systems course. My partner and
 
 <img src="http://i.imgur.com/4nI0sxv.jpg" width="350" height="300" />
 <img src="http://i.imgur.com/MFZ2vXJ.png" width="350" height="300" />
-<img src="http://i.imgur.com/NYwHVxJ.png" width="400" height="300" />
-<img src="http://i.imgur.com/dyX3UyT.jpg" width="400" height="300" />
+<img src="http://i.imgur.com/NYwHVxJ.png" width="350" height="300" />
+<img src="http://i.imgur.com/dyX3UyT.jpg" width="350" height="300" />
 <img src="http://i.imgur.com/XAGMQXM.png" width= "1000" height="400" />
 
 
@@ -14,6 +14,7 @@ This is the final project for the Web Information Systems course. My partner and
 <li>CSS</li>
 <li>PHP</li>
 <li>SQL</li>
+<li>MYSQL</li>
 </ul>
 
 <h3 align="center">Test Accounts:</h2>
