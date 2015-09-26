@@ -1,6 +1,13 @@
 # InfoSysProject
 This is the final project for the Web Information Systems course. My partner and I created a portal for students and admins that can be used to manage student profiles, search, run reports and more. To test it please follow this link: http://kukrejan.myweb.cs.uwindsor.ca/
 
+<img src="http://i.imgur.com/4nI0sxv.jpg" width="400" height="300" />
+<img src="http://i.imgur.com/MFZ2vXJ.png" width="400" height="300" />
+<img src="http://i.imgur.com/NYwHVxJ.png" width="400" height="300" />
+<img src="http://i.imgur.com/dyX3UyT.jpg" width="400" height="300" />
+<img src="http://i.imgur.com/XAGMQXM.png" width= "1000" height="400" />
+
+
 <b>Tools used:</b>
 <ul>
 <li>HTML</li>
